@@ -17,6 +17,11 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	85b7ea68b962f9e19002e9239ed222e5
 BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	apache1-mod_perl
+BuildRequires:	perl-HTML-Mason >= 1.1
+BuildRequires:	perl-PAR >= 0.62
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
