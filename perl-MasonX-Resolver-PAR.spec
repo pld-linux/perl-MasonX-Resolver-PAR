@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MasonX
 %define	pnam	Resolver-PAR
-Summary:	MasonX::Resolver::PAR - Get mason components from a PAR file
-#Summary(pl):	
+Summary:	MasonX::Resolver::PAR - get Mason components from a PAR file
+Summary(pl):	MasonX::Resolver::PAR - pobieranie komponentów Masona z pliku PAR
 Name:		perl-MasonX-Resolver-PAR
 Version:	0.2
 Release:	1
@@ -17,20 +17,17 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	85b7ea68b962f9e19002e9239ed222e5
 BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is a custom Mason Resolver which loads it's content from a PAR
-archive. This is meant to be used in conjunction with Apache::PAR. Read
-the description for this module first. The web.conf above should be
-inside the par archive as specified by Apache::PAR. It will be appended
-to your apache conf.
+archive. This is meant to be used in conjunction with Apache::PAR.
 
-# %description -l pl
-# TODO
+%description -l pl
+To jest w³asny obiekt Mason Resolver ³aduj±cy swoj± zawarto¶æ z
+archiwum PAR. Jest przeznaczony do u¿ywania w po³±czeniu z
+Apache::PAR.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -57,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/%{pdir}/*/*.pm
+%{perl_vendorlib}/MasonX/*/*.pm
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
