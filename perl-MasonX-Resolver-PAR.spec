@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MasonX
-%define	pnam	Resolver-PAR
+%define		pdir	MasonX
+%define		pnam	Resolver-PAR
 Summary:	MasonX::Resolver::PAR - get Mason components from a PAR file
 Summary(pl):	MasonX::Resolver::PAR - pobieranie komponentów Masona z pliku PAR
 Name:		perl-MasonX-Resolver-PAR
