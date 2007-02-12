@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Resolver-PAR
 Summary:	MasonX::Resolver::PAR - get Mason components from a PAR file
-Summary(pl):	MasonX::Resolver::PAR - pobieranie komponentów Masona z pliku PAR
+Summary(pl.UTF-8):   MasonX::Resolver::PAR - pobieranie komponentÃ³w Masona z pliku PAR
 Name:		perl-MasonX-Resolver-PAR
 Version:	0.2
 Release:	1
@@ -29,9 +29,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a custom Mason Resolver which loads it's content from a PAR
 archive. This is meant to be used in conjunction with Apache::PAR.
 
-%description -l pl
-To jest w³asny obiekt Mason Resolver ³aduj±cy swoj± zawarto¶æ z
-archiwum PAR. Jest przeznaczony do u¿ywania w po³±czeniu z
+%description -l pl.UTF-8
+To jest wÅ‚asny obiekt Mason Resolver Å‚adujÄ…cy swojÄ… zawartoÅ›Ä‡ z
+archiwum PAR. Jest przeznaczony do uÅ¼ywania w poÅ‚Ä…czeniu z
 Apache::PAR.
 
 %prep
