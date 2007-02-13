@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Resolver-PAR
 Summary:	MasonX::Resolver::PAR - get Mason components from a PAR file
-Summary(pl.UTF-8):   MasonX::Resolver::PAR - pobieranie komponentów Masona z pliku PAR
+Summary(pl.UTF-8):	MasonX::Resolver::PAR - pobieranie komponentów Masona z pliku PAR
 Name:		perl-MasonX-Resolver-PAR
 Version:	0.2
 Release:	1
