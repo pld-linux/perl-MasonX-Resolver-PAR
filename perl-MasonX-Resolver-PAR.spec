@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	MasonX
 %define		pnam	Resolver-PAR
+%include	/usr/lib/rpm/macros.perl
 Summary:	MasonX::Resolver::PAR - get Mason components from a PAR file
 Summary(pl.UTF-8):	MasonX::Resolver::PAR - pobieranie komponentów Masona z pliku PAR
 Name:		perl-MasonX-Resolver-PAR
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	85b7ea68b962f9e19002e9239ed222e5
+URL:		http://search.cpan.org/dist/MasonX-Resolver-PAR/
 BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
