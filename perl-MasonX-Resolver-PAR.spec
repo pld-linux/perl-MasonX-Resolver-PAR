@@ -4,7 +4,6 @@
 
 %define		pdir	MasonX
 %define		pnam	Resolver-PAR
-%include	/usr/lib/rpm/macros.perl
 Summary:	MasonX::Resolver::PAR - get Mason components from a PAR file
 Summary(pl.UTF-8):	MasonX::Resolver::PAR - pobieranie komponentów Masona z pliku PAR
 Name:		perl-MasonX-Resolver-PAR
